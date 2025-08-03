@@ -11,7 +11,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: rgba(26, 28, 32, 0.95);
+  background: rgba(26, 28, 32, 0.50);
   backdrop-filter: blur(20px);
   padding: 20px 40px;
   display: flex;
@@ -112,6 +112,17 @@ section h2 {
 #announcement {
   padding: 40px 0;
   text-align: center;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title-image {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .announcement-box {
@@ -304,6 +315,18 @@ section h2 {
 
 .btn:active {
   transform: translateY(0);
+}
+
+.hashtag {
+  color: #ff3b30;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 0 2px;
+}
+
+.hashtag:hover {
+  color: #ff6b6b;
 }
 
 @media (max-width: 768px) {
