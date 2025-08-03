@@ -5,7 +5,7 @@ const definitions = {
   fa: "<strong>اپوستوفوبیا</strong><br><br>ترس، نفرت یا مجازات غیرمنطقی افرادی که دین خود را ترک می‌کنند.",
   de: "<strong>Apostophobie</strong>  (f)<br><br>Die irrationale Angst, der Hass oder die Bestrafung von Menschen, die ihre Religion verlassen.",
   ur: "<strong>اپوسٹو فوبیا</strong><br><br>وہ غیر منطقی خوف، نفرت یا سزا جو مذہب چھوڑنے والوں کے خلاف ہو۔",
-  hi: "अपोस्टोफोबिया (संज्ञा)<br>जो लोग अपना धर्म छोड़ते हैं उनके प्रति अव्यवहारिक डर, नफरत या सज़ा।"
+  hi: "<strong>अपोस्टोफोबिया</strong> (संज्ञा)<br><br>जो लोग अपना धर्म छोड़ते हैं उनके प्रति अव्यवहारिक डर, नफरत या सज़ा।"
 };
 
 document.getElementById("language-selector").addEventListener("change", function () {
