@@ -125,13 +125,23 @@ section h2 {
   margin-bottom: 30px;
 }
 
+.announcement-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .announcement-box {
   background: linear-gradient(135deg, rgba(255, 59, 48, 0.1), rgba(255, 107, 107, 0.1));
   border: 2px solid rgba(255, 59, 48, 0.3);
   border-radius: 20px;
   padding: 40px;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 400px;
+  flex: 1;
+  min-width: 350px;
   backdrop-filter: blur(10px);
   box-shadow: 0 15px 35px rgba(255, 59, 48, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -175,6 +185,42 @@ section h2 {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 59, 48, 0.4);
   background: linear-gradient(135deg, #ff4d4d, #ff7b7b);
+}
+
+/* Apostasy Day container - white/gray text */
+.apostasy-day h3 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* FreeBetty Campaign container - red styling */
+.freebetty-campaign {
+  background: linear-gradient(135deg, rgba(220, 20, 20, 0.15), rgba(255, 0, 0, 0.15)) !important;
+  border: 2px solid rgba(220, 20, 20, 0.4) !important;
+  box-shadow: 0 15px 35px rgba(220, 20, 20, 0.3) !important;
+}
+
+.freebetty-campaign:hover {
+  box-shadow: 0 20px 45px rgba(220, 20, 20, 0.4) !important;
+  border-color: rgba(220, 20, 20, 0.6) !important;
+}
+
+.freebetty-campaign h3 {
+  color: #dc1414 !important;
+  font-weight: 700;
+}
+
+.freebetty-campaign p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-freebetty {
+  background: linear-gradient(135deg, #dc1414, #ff3333) !important;
+  box-shadow: 0 4px 15px rgba(220, 20, 20, 0.4) !important;
+}
+
+.btn-freebetty:hover {
+  background: linear-gradient(135deg, #ff3333, #ff5555) !important;
+  box-shadow: 0 8px 25px rgba(220, 20, 20, 0.5) !important;
 }
 
 .select-wrapper {
@@ -382,9 +428,16 @@ section h2 {
     max-width: 320px;
   }
   
+  .announcement-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
   .announcement-box {
     padding: 30px 20px;
     margin: 0 10px;
+    max-width: none;
+    min-width: auto;
   }
   
   .announcement-box h3 {
