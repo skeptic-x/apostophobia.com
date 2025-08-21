@@ -223,6 +223,41 @@ section h2 {
   box-shadow: 0 8px 25px rgba(220, 20, 20, 0.5) !important;
 }
 
+/* FreeBetty campaign content layout */
+.campaign-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.campaign-thumbnail {
+  flex-shrink: 0;
+}
+
+.freebetty-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(220, 20, 20, 0.4);
+  box-shadow: 0 4px 12px rgba(220, 20, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.freebetty-image:hover {
+  transform: scale(1.05);
+  border-color: rgba(220, 20, 20, 0.6);
+  box-shadow: 0 6px 18px rgba(220, 20, 20, 0.4);
+}
+
+.campaign-text {
+  flex: 1;
+}
+
+.campaign-text h3 {
+  margin-top: 0;
+}
+
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -446,5 +481,18 @@ section h2 {
   
   .announcement-box p {
     font-size: 16px;
+  }
+  
+  /* Mobile layout for FreeBetty campaign */
+  .campaign-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .freebetty-image {
+    width: 80px;
+    height: 80px;
   }
 }
