@@ -22,6 +22,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Logo click to scroll to top
+document.getElementById('logo').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 // Smooth scrolling with offset for mobile
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
