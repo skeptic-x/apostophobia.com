@@ -194,7 +194,10 @@ section h2 {
 
 /* FreeBetty Campaign container - red styling */
 .freebetty-campaign {
-  background: linear-gradient(135deg, rgba(220, 20, 20, 0.15), rgba(255, 0, 0, 0.15)) !important;
+  background: linear-gradient(135deg, rgba(220, 20, 20, 0.8), rgba(255, 0, 0, 0.7)), url('/assets/freebetty-campaign.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   border: 2px solid rgba(220, 20, 20, 0.4) !important;
   box-shadow: 0 15px 35px rgba(220, 20, 20, 0.3) !important;
 }
@@ -226,36 +229,33 @@ section h2 {
 /* FreeBetty campaign content layout */
 .campaign-content {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .campaign-thumbnail {
-  flex-shrink: 0;
+  display: none;
 }
 
 .freebetty-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid rgba(220, 20, 20, 0.4);
-  box-shadow: 0 4px 12px rgba(220, 20, 20, 0.3);
-  transition: all 0.3s ease;
-}
-
-.freebetty-image:hover {
-  transform: scale(1.05);
-  border-color: rgba(220, 20, 20, 0.6);
-  box-shadow: 0 6px 18px rgba(220, 20, 20, 0.4);
+  display: none;
 }
 
 .campaign-text {
-  flex: 1;
+  width: 100%;
 }
 
 .campaign-text h3 {
   margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.freebetty-campaign .campaign-text p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .select-wrapper {
@@ -488,11 +488,6 @@ section h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
-  }
-  
-  .freebetty-image {
-    width: 80px;
-    height: 80px;
+    justify-content: center;
   }
 }
