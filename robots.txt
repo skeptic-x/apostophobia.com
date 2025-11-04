@@ -1,0 +1,12 @@
+User-agent: *
+Disallow:
+
+# Allow common search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap (if you have one)
+# Sitemap: https://apostophobia.com/sitemap.xml
